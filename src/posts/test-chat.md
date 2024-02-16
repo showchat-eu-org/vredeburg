@@ -5,4 +5,10 @@ tags:
     - chat
     - irc
 ---
-<ins id="kiwi-romaniachat" data-theme="default" data-nick="RomaniaChat??" data-chan="romania,radioclick"></ins><script src="https://embed.showchat.eu.org/js/kiwi-romaniachat.min.js"></script>
+{# https://tailwindcss.com/docs/height #}
+<div class="relative w-full h-screen">
+    <iframe class="absolute top-0 left-0 w-full h-5/6"
+        src="https://kiwiirc.com/nextclient/?theme=osprey#irc://irc.radioclick.ro/#Romania,#RadioClick,#ShowChat?&nick=ShowChat??"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+</div>
