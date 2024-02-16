@@ -39,6 +39,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+	<!-- radioclick -->
+	<link href="https://api.showchat.eu.org/radioclick/css/radioclick.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 </head>	
 
 <body class="flex flex-col h-screen bg-white text-slate-800 break-words">
@@ -55,6 +58,14 @@
     {% include "partials/foter.njk" %}
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>
     {# {% include "partials/cookies.njk" %} #}
+
+	<!-- radioclick -->
+	<script src="https://api.showchat.eu.org/radioclick/js/radioclick.js"></script>
+     <script> 
+     $('#radioclick').rcr({ 
+     URL: 'http://live.radioclick.ro:8008', version: '2', mount_point: 'undefined', vertical_layout: true, 
+     bg: 'bluegrey', accent: 'blue', blur: true, autoplay: true, enable_cors: false, }); 
+    </script>
 </body>
 
 </html>
