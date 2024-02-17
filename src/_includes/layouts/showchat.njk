@@ -42,6 +42,17 @@
 	  <!-- radioclick -->
 	  <link href="https://api.showchat.eu.org/radioclick/css/rcr.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+
+<!-- capture the CSS content as a Nunjucks variable -->
+{% set css %}
+  {% include "components/header.css" %}
+  {% include "components/footer.css" %}
+{% endset %}
+<!-- feed it through our cssmin filter to minify -->
+<style>
+  {{ css | cssmin | safe }}
+</style>
 </head>	
 
 <body class="flex flex-col h-screen bg-white text-slate-800 break-words">
