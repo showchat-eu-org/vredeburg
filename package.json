@@ -26,7 +26,7 @@
   "homepage": "https://github.com/daflh/vredeburg#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.10",
     "concurrently": "^7.6.0",
     "cross-env": "^7.0.3",
     "dayjs": "^1.11.7",
