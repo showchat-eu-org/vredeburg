@@ -18,7 +18,7 @@
 {%- endset -%}
 <!DOCTYPE html>
 <html>
-
+    
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,8 +39,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
-	  <!-- radioclick -->
-	  <link href="https://api.showchat.eu.org/radioclick/css/rcr.css" rel="stylesheet" type="text/css">
+	<!-- radioclick -->
+	<link href="https://api.showchat.eu.org/radioclick/css/rcr.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 </head>	
 
@@ -58,7 +58,8 @@
     {% include "partials/foter.njk" %}
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>
     {# {% include "partials/cookies.njk" %} #}
-    {% include "partials/radioclickjs.njk" %}
+       {% include "partials/radioclick.njk" %}
+
 </body>
 
 </html>
