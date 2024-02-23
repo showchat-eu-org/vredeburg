@@ -17,6 +17,10 @@ module.exports = (config) => {
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
 
+  eleventyConfig.addShortcode('year', () => {
+        return `${new Date().getFullYear()}`;
+    });
+
   return {
     dir: {
       input: 'src',
