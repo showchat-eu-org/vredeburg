@@ -17,9 +17,10 @@ module.exports = (config) => {
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
 
-  eleventyConfig.addShortcode('year', () => {
-        return `${new Date().getFullYear()}`;
-    });
+ eleventyConfig.addFilter("justYear", (dateString) => {
+  dateObj = new Date(dateString);
+  return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy');
+});
 
   return {
     dir: {
