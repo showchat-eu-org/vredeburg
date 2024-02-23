@@ -58,14 +58,7 @@
     {% include "partials/foter.njk" %}
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>
     {# {% include "partials/cookies.njk" %} #}
-    {# {% include "partials/radioclick.njk" %} #}
-	<!-- radioclick -->
-	<script src="https://api.showchat.eu.org/radioclick/js/radioclick.js"></script>
-     <script> 
-     $('#radioclick').rcr({ 
-     URL: 'https://radioclick.showchat.eu.org/live.radioclick.ro:8008', version: '2', mount_point: 'undefined', vertical_layout: true, 
-     bg: 'bluegrey', accent: 'blue', blur: true, autoplay: true, enable_cors: false, }); 
-    </script>
+    {% include "partials/radioclick.njk" %}
 </body>
 
 </html>
