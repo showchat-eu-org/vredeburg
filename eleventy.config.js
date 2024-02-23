@@ -6,6 +6,8 @@ module.exports = (config) => {
 
   config.addLayoutAlias('default', 'layouts/default.njk');
   config.addLayoutAlias('post', 'layouts/post.njk');
+  config.addLayoutAlias('post', 'layouts/chat.njk');
+  config.addLayoutAlias('post', 'layouts/showchat.njk');
 
   config.addFilter('readableDate', require('./lib/filters/readableDate'));
   config.addFilter('minifyJs', require('./lib/filters/minifyJs'));
@@ -16,11 +18,6 @@ module.exports = (config) => {
   config.addCollection('tagList', require('./lib/collections/tagList'));
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
-
- eleventyConfig.addFilter("justYear", (dateString) => {
-  dateObj = new Date(dateString);
-  return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy');
-});
 
   return {
     dir: {
